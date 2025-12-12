@@ -1,0 +1,23 @@
+@keyframes scrollingletters {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: calc(var(--n1) * -1);
+    }
+    60% {
+        margin-left: calc(var(--n1) * -1);
+    }
+    90% {
+        margin-left: 0;
+    }
+}
+
+@keyframes arrows-left {
+    0% {
+        margin-left: -112vw;
+    }
+    100% {
+        margin-left: 0;
+    }
+}

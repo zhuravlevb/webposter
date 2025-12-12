@@ -1,3 +1,132 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    --gap: 24px;
+    --n1: calc((100vw - var(--gap) * 5) / 4);
+    --n2: calc(var(--n1) * 2 + var(--gap));
+    --n4: calc(100vw - var(--gap) * 2);
+    --anim: cubic-bezier(1, 0, 0, 1);
+    margin: var(--gap);
+    background-color: #d2d2d2;
+    background-size: var(--gap) var(--gap);
+    background-image: linear-gradient(to right, #b7b7b7 1px, transparent 1px),
+        linear-gradient(to bottom, #b7b7b7 1px, transparent 1px);
+    font-family: "Helvetica Neue", Helvetica, Arial, system-ui;
+}
+
+section {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: var(--gap) 0;
+}
+
+section.n1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.n1 > * {
+    width: var(--n1);
+}
+
+section.n2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+section.n2 > * {
+    width: var(--n2);
+}
+
+section.n4 {
+    grid-template-columns: 1fr;
+}
+
+section.n4 > * {
+    width: var(--n4);
+}
+
+/* первая секция */
+
+#star {
+    width: 7vw;
+    height: fit-content;
+    background-color: #ef0b85;
+}
+
+.scrollingletters {
+    height: fit-content;
+    overflow: hidden;
+}
+
+.scrollingletters > img {
+    width: calc(var(--n1) * 2);
+    animation: scrollingletters 3s infinite var(--anim);
+}
+
+#sl-u {
+    background-color: #ef340b;
+}
+
+#sl-t {
+    background-color: #4f0bef;
+}
+
+#sl-f {
+    background-color: #ef0b85;
+}
+
+#lead {
+    position: relative;
+}
+
+#leadingtext {
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+    line-height: 3.7vw;
+    position: absolute;
+    bottom: 0;
+    z-index: auto;
+}
+
+#leadingtext::before,
+#leadingtext::after {
+    content: "";
+    height: 2.2vw;
+    width: 20.5vw;
+    background-color: #ef340b;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0.4vw;
+}
+
+#leadingtext::before {
+    width: 13.2vw;
+    bottom: 4vw;
+}
+
+/* вторая секция */
+
+#runningline {
+    position: relative;
+    overflow: hidden;
+    height: 11.9vw;
+    background-color: #222;
+}
+
+#arrows {
+    width: 180vw;
+    z-index: auto;
+    animation: arrows-left 3s infinite linear;
+}
+
+#date {
+    position: absolute;
+    height: 11.9vw;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
