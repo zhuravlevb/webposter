@@ -1,9 +1,22 @@
-<svg width="355" height="284" viewBox="0 0 355 284" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="355" height="284" fill="url(#pattern0_144_4000)"/>
-<defs>
-<pattern id="pattern0_144_4000" patternUnits="userSpaceOnUse" patternTransform="matrix(71.04 0 0 71.04 0 0)" preserveAspectRatio="none" viewBox="0 0 24 24" width="1" height="1">
-<g id="pattern0_144_4000_inner">
-<circle cx="12" cy="12" r="12" fill="#EF340B"/>
-</g>
-</pattern></defs>
+<svg width="355" height="284" viewBox="0 0 355 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="35.5" cy="35.5" r="35.5" fill="#EF340B"/>
+<circle cx="106.5" cy="35.5" r="35.5" fill="#EF340B"/>
+<circle cx="177.5" cy="35.5" r="35.5" fill="#EF340B"/>
+<circle cx="248.5" cy="35.5" r="35.5" fill="#EF340B"/>
+<circle cx="319.5" cy="35.5" r="35.5" fill="#EF340B"/>
+<circle cx="35.5" cy="106.5" r="35.5" fill="#EF340B"/>
+<circle cx="106.5" cy="106.5" r="35.5" fill="#EF340B"/>
+<circle cx="177.5" cy="106.5" r="35.5" fill="#EF340B"/>
+<circle cx="248.5" cy="106.5" r="35.5" fill="#EF340B"/>
+<circle cx="319.5" cy="106.5" r="35.5" fill="#EF340B"/>
+<circle cx="35.5" cy="177.5" r="35.5" fill="#EF340B"/>
+<circle cx="106.5" cy="177.5" r="35.5" fill="#EF340B"/>
+<circle cx="177.5" cy="177.5" r="35.5" fill="#EF340B"/>
+<circle cx="248.5" cy="177.5" r="35.5" fill="#EF340B"/>
+<circle cx="319.5" cy="177.5" r="35.5" fill="#EF340B"/>
+<circle cx="35.5" cy="248.5" r="35.5" fill="#EF340B"/>
+<circle cx="106.5" cy="248.5" r="35.5" fill="#EF340B"/>
+<circle cx="177.5" cy="248.5" r="35.5" fill="#EF340B"/>
+<circle cx="248.5" cy="248.5" r="35.5" fill="#EF340B"/>
+<circle cx="319.5" cy="248.5" r="35.5" fill="#EF340B"/>
 </svg>
