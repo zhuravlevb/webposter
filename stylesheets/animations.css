@@ -11,6 +11,9 @@
     90% {
         margin-left: 0;
     }
+    100% {
+        margin-left: 0;
+    }
 }
 
 @keyframes arrows-left {
@@ -19,5 +22,166 @@
     }
     100% {
         margin-left: 0;
+    }
+}
+
+@keyframes arrows-right {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -112vw;
+    }
+}
+
+@keyframes dots1 {
+    0% {
+        background-size: calc(var(--n2) + 1vw) auto;
+    }
+
+    50% {
+        background-size: calc((var(--n2) + 1vw) * 0.7) auto;
+    }
+}
+
+@keyframes dots2 {
+    0% {
+        background-size: calc(var(--n1) + 1.2vw) auto;
+    }
+
+    50% {
+        background-size: calc((var(--n1) + 1.2vw) * 0.7) auto;
+    }
+}
+
+@keyframes solutions {
+    0% {
+        background-image: url("../images/sol1.svg");
+    }
+    33% {
+        background-image: url("../images/sol2.svg");
+    }
+    66% {
+        background-image: url("../images/sol3.svg");
+    }
+}
+
+@keyframes stars {
+    0% {
+        background-position-x: 0;
+    }
+    25% {
+        background-position-x: -24.5vw;
+    }
+    50% {
+        background-position-x: -37.5vw;
+    }
+    75% {
+        background-position-x: -44.8vw;
+    }
+    100% {
+        background-position-x: -47.76vw;
+    }
+}
+
+@keyframes samokatnaya {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -99.6vw;
+    }
+}
+
+@keyframes figuredots {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes figurecircles {
+    0% {
+        margin-left: calc(var(--n1) / -2);
+    }
+    50% {
+        margin-left: calc(var(--n1) / -1);
+    }
+    100% {
+        margin-left: calc(var(--n1) * -1.5);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(0.83) rotate(0deg);
+    }
+    25% {
+        transform: scale(0.83) rotate(-90deg);
+    }
+    50% {
+        transform: scale(0.83) rotate(-180deg);
+    }
+    75% {
+        transform: scale(0.83) rotate(-270deg);
+    }
+    100% {
+        transform: scale(0.83) rotate(-360deg);
+    }
+}
+
+@keyframes oval {
+    0% {
+        width: calc(var(--n1) * 0.2);
+    }
+    100% {
+        width: calc(var(--n1) * 0.45);
+    }
+}
+
+@keyframes arrows-left-mobile {
+    0% {
+        margin-left: -106.3vw;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes arrows-right-mobile {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -106.3vw;
+    }
+}
+
+@keyframes samokatnaya-mobile {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -96.3vw;
+    }
+}
+
+@keyframes stars-mobile {
+    0% {
+        background-position-x: 0;
+    }
+    25% {
+        background-position-x: -48.3vw;
+    }
+    50% {
+        background-position-x: -74vw;
+    }
+    75% {
+        background-position-x: -88.1vw;
+    }
+    100% {
+        background-position-x: -93.95vw;
     }
 }

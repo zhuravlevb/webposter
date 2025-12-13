@@ -3,7 +3,7 @@
 }
 
 body {
-    --gap: 24px;
+    --gap: 1.5vw;
     --n1: calc((100vw - var(--gap) * 5) / 4);
     --n2: calc(var(--n1) * 2 + var(--gap));
     --n4: calc(100vw - var(--gap) * 2);
@@ -14,6 +14,7 @@ body {
     background-image: linear-gradient(to right, #b7b7b7 1px, transparent 1px),
         linear-gradient(to bottom, #b7b7b7 1px, transparent 1px);
     font-family: "Helvetica Neue", Helvetica, Arial, system-ui;
+    letter-spacing: -0.1vw;
 }
 
 section {
@@ -51,7 +52,7 @@ section.n4 > * {
 
 #star {
     width: 7vw;
-    height: fit-content;
+    height: 6.6vw;
     background-color: #ef0b85;
 }
 
@@ -84,7 +85,6 @@ section.n4 > * {
 #leadingtext {
     font-size: 4vw;
     font-weight: bold;
-    letter-spacing: -0.05rem;
     line-height: 3.7vw;
     position: absolute;
     bottom: 0;
@@ -129,4 +129,379 @@ section.n4 > * {
     right: 0;
     top: 0;
     z-index: 2;
+}
+
+/* третья секция */
+
+#thirdsection {
+    background-color: #ef0b85;
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap);
+    position: relative;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.lineuplines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lineuplines:nth-of-type(2),
+.lineuplines:nth-of-type(3) {
+    margin: 1.3vw 0;
+}
+
+.lineuplines p {
+    z-index: auto;
+    font-size: 2.8vw;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.lineuplines p::after {
+    content: "";
+    height: 1.5vw;
+    width: 1vw;
+    background-color: #222;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0.3vw;
+}
+
+#lineup1::after {
+    width: 14.8vw;
+}
+
+#lineup2::after {
+    width: 9.9vw;
+}
+
+#lineup3::after {
+    width: 9vw;
+}
+
+#lineup4::after {
+    width: 16.1vw;
+}
+
+#lineup5::after {
+    width: 9.3vw;
+}
+
+#lineup6::after {
+    width: 10.5vw;
+}
+
+#lineup7::after {
+    width: 11.2vw;
+}
+
+#lineup8::after {
+    width: 17vw;
+}
+
+#lineup9::after {
+    width: 10.2vw;
+}
+
+#lineup10::after {
+    width: 7.8vw;
+}
+
+#lineup11::after {
+    width: 7.1vw;
+}
+
+#lineup12::after {
+    width: 19.3vw;
+}
+
+/* четвертая секция */
+#fourthsection {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+#fourthsection div {
+    height: 16.5vw;
+}
+
+#fourthsection div:nth-of-type(1) {
+    width: var(--n2);
+    background-image: url("../images/block1.svg");
+    background-size: calc(var(--n2) + 1vw) auto;
+    animation: dots1 3s infinite var(--anim);
+}
+
+#fourthsection div:nth-of-type(2) {
+    width: var(--n1);
+    background-image: url("../images/block2.svg");
+    background-size: calc(var(--n1) + 1.2vw) auto;
+    animation: dots2 3s infinite var(--anim);
+}
+
+#fourthsection div:nth-of-type(3) {
+    width: var(--n1);
+    background-image: url("../images/block3.svg");
+    background-size: calc(var(--n1) + 1.2vw) auto;
+    animation: dots2 3s infinite var(--anim);
+}
+
+/* пятая секция */
+#solutions {
+    animation: solutions 3s infinite steps(1);
+    height: 21.6vw;
+    background-size: var(--n2) auto;
+    background-repeat: no-repeat;
+}
+
+#stars {
+    height: 22.1vw;
+    background-size: calc(var(--n2) * 2) auto;
+    background-color: #ef0b85;
+    background-image: url("../images/stars.svg");
+    animation: stars 6s infinite var(--anim);
+}
+
+/* шестая секция */
+
+/* седьмая секция */
+#samokatnaya {
+    background-size: calc(var(--n4) * 2) auto;
+    background-image: url("../images/samokatnaya.svg");
+    animation: samokatnaya 3s infinite linear;
+    width: var(--n4);
+    height: 8.4vw;
+    background-repeat: no-repeat;
+    background-color: #ef0b85;
+}
+
+/* восьмая секция */
+#figure1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    width: var(--n1);
+}
+
+#figure1 .element1,
+#figure1 .element4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#figure1 .element2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#figure1 .element3 {
+    background-color: #ef340b;
+    width: calc(var(--n1) / 2);
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+}
+
+.smalldot {
+    background-color: #ef340b;
+    width: calc(var(--n1) / 6);
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    animation: figuredots 1.5s infinite var(--anim);
+}
+
+.bigdot {
+    background-color: #ef340b;
+    width: calc(var(--n1) / 4);
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+}
+
+#figure2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#figure2 > div {
+    width: calc(var(--n1) / 2);
+    overflow: hidden;
+}
+
+#figure2 > div > div {
+    width: calc(var(--n1) * 2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: calc(var(--n1) / -2);
+    animation: figurecircles 3s infinite var(--anim);
+}
+
+#figure2 .dot {
+    background-color: #ef0b85;
+    width: var(--n1);
+    height: var(--n1);
+    border-radius: 1000px;
+}
+
+#figure3 {
+    background-color: #ef340b;
+    border-radius: 1000px;
+}
+
+#figure3 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: var(--n1);
+    height: var(--n1);
+    transform: scale(0.83);
+    animation: rotate 6s infinite var(--anim);
+}
+
+#figure3 > div > div {
+    background-color: #4f0bef;
+    border-radius: 1000px;
+}
+
+#figure3 > div > div.circle > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: calc(var(--n1) / 2);
+    height: calc(var(--n1) / 2);
+    transform: scale(0.83);
+    animation: rotate 6s infinite var(--anim);
+}
+
+#figure3 > div > div.circle > div > div {
+    background-color: #ef340b;
+    border-radius: 1000px;
+}
+
+#figure4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#figure4 div {
+    border-radius: 100%;
+    background-color: #ef340b;
+    height: var(--n1);
+    width: 100px;
+}
+
+#figure4 div:nth-of-type(1) {
+    width: calc(var(--n1) * 0.2);
+    animation: oval 1.5s infinite alternate var(--anim);
+}
+
+#figure4 div:nth-of-type(2) {
+    width: calc(var(--n1) * 0.33);
+}
+
+#figure4 div:nth-of-type(3) {
+    width: calc(var(--n1) * 0.46);
+    animation: oval 1.5s infinite alternate-reverse var(--anim);
+}
+
+/* девятая секция */
+
+#runningline2 {
+    position: relative;
+    overflow: hidden;
+    height: 11.9vw;
+    background-color: #222;
+}
+
+#arrows2 {
+    width: 180vw;
+    z-index: auto;
+    transform: rotate(180deg) translateX(-40vw);
+    animation: arrows-right 3s infinite linear;
+}
+
+#fcdc {
+    position: absolute;
+    height: 11.9vw;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/* десятая секция */
+
+/* одиннадацатая секция */
+
+#link {
+    padding: 6vw 0;
+    background-image: url("../images/linkbg.svg");
+    background-repeat: no-repeat;
+    background-size: var(--n4) auto;
+}
+
+#link:hover {
+    background-image: none;
+    /* border-bottom: 5px solid #222;
+    padding-bottom: 0;
+    margin-bottom: 6vw; */
+}
+
+/* футер */
+
+#footer,
+#footer-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer a,
+#footer-mobile a {
+    font-size: 2.2vw;
+    font-weight: bold;
+    color: #4f0bef;
+    position: relative;
+    text-decoration: none;
+}
+
+#footer a:hover,
+#footer-mobile a:hover {
+    text-decoration: underline;
+}
+
+#footer a::after,
+#footer-mobile a::after {
+    content: "";
+    height: 1.2vw;
+    width: 1vw;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0.2vw;
+}
+
+#footer a:nth-of-type(1)::after {
+    width: 17.4vw;
+}
+
+#footer a:nth-of-type(2)::after {
+    width: 26vw;
+}
+
+#footer a:nth-of-type(3)::after {
+    width: 26vw;
+}
+
+#footer-mobile {
+    display: none;
 }

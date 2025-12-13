@@ -1,0 +1,17 @@
+<svg width="710" height="284" viewBox="0 0 710 284" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="710" height="284" fill="url(#pattern0_144_3998)"/>
+<defs>
+<pattern id="pattern0_144_3998" patternUnits="userSpaceOnUse" patternTransform="matrix(142.08 0 0 142.08 0 0)" preserveAspectRatio="none" viewBox="0 0 48 48" width="1" height="1">
+<g id="pattern0_144_3998_inner">
+<g clip-path="url(#clip0_144_3998)">
+<circle cx="12" cy="12" r="12" fill="#EF340B"/>
+<circle cx="36" cy="36" r="12" fill="#EF340B"/>
+<circle cx="36" cy="12" r="12" fill="#4F0BEF"/>
+<circle cx="12" cy="36" r="12" fill="#EF0B85"/>
+</g>
+</g>
+</pattern><clipPath id="clip0_144_3998">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
