@@ -512,6 +512,7 @@ section.n4 > * {
     background-image: url("../images/linkbg.svg");
     background-repeat: no-repeat;
     background-size: var(--n4) auto;
+    width: var(--n4);
 }
 
 #link:hover {
