@@ -141,6 +141,37 @@
     }
 }
 
+@keyframes technologic {
+    0% {
+        background-image: url("../images/technologic1.svg");
+    }
+    50% {
+        background-image: url("../images/technologic2.svg");
+    }
+    100% {
+        background-image: url("../images/technologic1.svg");
+    }
+}
+
+@keyframes solutionsmarquee {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -99.9vw;
+    }
+}
+
+@keyframes circles {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes arrows-left-mobile {
     0% {
         margin-left: -106.3vw;

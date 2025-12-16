@@ -2,7 +2,7 @@
     body {
         --gap: 3vw;
         --n1: calc((100vw - var(--gap) * 3) / 2);
-        background-size: calc(var(--gap) * 2) calc(var(--gap) * 2);
+        background-size: 4vw 4vw;
     }
 
     section.n1 {
@@ -205,5 +205,37 @@
 
     #footer-mobile a:nth-of-type(2)::after {
         width: 12.1vw;
+    }
+
+    #technologic {
+        height: 9.2vw;
+    }
+
+    #sponsor {
+        height: 110vw;
+        background-image: none;
+    }
+
+    #circlescontainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--gap);
+    }
+
+    .sponsorcircle {
+        margin: 0 !important;
+        width: var(--n1);
+        height: var(--n1);
+    }
+
+    #circlescontainer p {
+        font-size: 5vw;
+        height: fit-content;
+        margin-top: calc(var(--n1) - 6vw);
+    }
+
+    #sponsor p {
+        font-size: 5vw;
     }
 }

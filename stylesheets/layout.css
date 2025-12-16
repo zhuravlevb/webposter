@@ -254,7 +254,7 @@ section.n4 > * {
 /* пятая секция */
 #solutions {
     animation: solutions 3s infinite steps(1);
-    height: 21.6vw;
+    height: 22.6vw;
     background-size: var(--n2) auto;
     background-repeat: no-repeat;
 }
@@ -268,6 +268,53 @@ section.n4 > * {
 }
 
 /* шестая секция */
+
+#sponsor {
+    background-color: #4f0bef;
+    background-image: url("../images/guys.png");
+    background-size: var(--n4) auto;
+    height: 35vw;
+    position: relative;
+}
+
+#circlescontainer {
+    display: inline;
+    height: fit-content;
+}
+
+.sponsorcircle {
+    width: 14vw;
+    height: 14vw;
+    /* transition: all 1s var(--anim); */
+}
+
+.sponsorcircle:hover {
+    animation: circles 1s 1 var(--anim);
+    /* transform: rotate(360deg); */
+}
+
+#tcircle {
+    margin-left: calc(var(--n2) + var(--gap) - 14vw);
+}
+
+#fcircle {
+    margin-left: calc(var(--n1) + var(--gap) - 14vw);
+}
+
+#sponsor p {
+    font-size: 2.5vw;
+    font-weight: 300;
+    color: #fff;
+    margin: 0.5vw;
+}
+
+#bottomline {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0.5vw;
+}
 
 /* седьмая секция */
 #samokatnaya {
@@ -439,6 +486,25 @@ section.n4 > * {
 
 /* десятая секция */
 
+#technosolutions {
+    gap: 0;
+    background-color: #ef340b;
+}
+
+#technologic {
+    animation: technologic 1.5s infinite steps(1);
+    height: 9.5vw;
+    background-repeat: no-repeat;
+    background-size: var(--n4) auto;
+}
+
+#solutionsmarquee {
+    background-image: url("../images/solutionsmarquee.svg");
+    background-size: 200vw auto;
+    height: 15.6vw;
+    animation: solutionsmarquee 3s infinite linear;
+}
+
 /* одиннадацатая секция */
 
 #link {
@@ -495,7 +561,7 @@ section.n4 > * {
 }
 
 #footer a:nth-of-type(2)::after {
-    width: 26vw;
+    width: 38.1vw;
 }
 
 #footer a:nth-of-type(3)::after {
